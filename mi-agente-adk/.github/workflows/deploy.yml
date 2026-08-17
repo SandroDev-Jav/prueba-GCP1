@@ -46,4 +46,4 @@ jobs:
             --platform=managed \
             --region=${{ env.REGION }} \
             --allow-unauthenticated \
-            --set-env-vars GCS_BUCKET_NAME="informacion-prueba",PDF_FILE_PATH="informacion-prueba/procesos/3 PROCESO DE ASIGNACIÓN DE EQUIPO DE CÓMPUTO.pdf"
+            --set-env-vars GCS_BUCKET_NAME="informacion-prueba",PDF_FILE_PATH="procesos/3 PROCESO DE ASIGNACIÓN DE EQUIPO DE CÓMPUTO.pdf"

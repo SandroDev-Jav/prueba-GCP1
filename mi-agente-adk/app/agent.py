@@ -4,8 +4,10 @@ from pypdf import PdfReader
 from io import BytesIO
 from google.adk.agents import Agent
 
-BUCKET_NAME = os.getenv("GCS_BUCKET_NAME")
-PDF_PATH = os.getenv("PDF_FILE_PATH")  # Ejemplo: "documentos/proceso.pdf"
+BUCKET_NAME = os.getenv("informacion-prueba")
+PDF_PATH = os.getenv(
+    "procesos/3 PROCESO DE ASIGNACIÓN DE EQUIPO DE CÓMPUTO.pdf"
+)  # Ejemplo: "documentos/proceso.pdf"
 
 
 def leer_pdf_gcs() -> str:
