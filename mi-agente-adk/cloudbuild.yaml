@@ -1,7 +1,8 @@
 steps:
-# Paso 1: Construir apuntando al archivo dentro de la carpeta
+# Paso 1: Construir la imagen moviéndose a la subcarpeta
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/tu-app', '-f', 'mi-agente adk/Dockerfile', '.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/tu-app', '.']
+  dir: 'mi-agente adk'  # <--- Al usar comillas simples respetará el espacio
 
 # Paso 2: Subir la imagen al registro de Google
 images:
