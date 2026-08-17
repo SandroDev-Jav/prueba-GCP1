@@ -1,8 +1,0 @@
-steps:
-# Paso 1: Construir la imagen de Docker usando el archivo deploy.yml como Dockerfile
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/tu-app', '-f', 'deploy.yml', '.']
-
-# Paso 2: Subir la imagen al registro de Google
-images:
-- 'gcr.io/$PROJECT_ID/tu-app'

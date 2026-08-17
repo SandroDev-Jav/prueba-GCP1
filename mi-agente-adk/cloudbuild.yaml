@@ -1,0 +1,8 @@
+steps:
+# Paso 1: Construir la imagen usando el Dockerfile estándar
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/tu-app', '.']
+
+# Paso 2: Subir la imagen al registro de Google
+images:
+- 'gcr.io/$PROJECT_ID/tu-app'
