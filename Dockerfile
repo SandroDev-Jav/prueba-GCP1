@@ -5,7 +5,7 @@ FROM python:3.13
 WORKDIR /app
 
 # Copiar el archivo de requerimientos e instalar dependencias de Python
-COPY requerimientos.txt .
+COPY requerimientos.txt ./
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requerimientos.txt
 
